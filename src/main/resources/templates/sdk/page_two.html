@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title>第二页</title>
+</head>
+<script type="text/javascript" src="/static/js/track/analytics.js"></script>
+<body>
+    <h3>第二页</h3>
+    <b>跳转到</b>:
+    <a href="/js_sdk/index">导航页</a>
+    <a href="/js_sdk/page_one">第一页</a>
+    <a href="/js_sdk/page_two">第二页</a>
+    <a href="/js_sdk/page_three">第三页</a>
+    <hr/>
+    <label>category: event的category名称</label><br/>
+    <label>action: event的action名称</label><br/>
+    <label>map: {"key1":"value1", "key2":"value2"}</label><br/>
+    <label>duration: 1245</label><br/>
+    <button onclick="__AE__.onEventDuration('event的category名称','event的action名称', {'key1':'value1','key2':'value2'}, 1245)">触发带map和duration的事件</button><br/>
+    <button onclick="__AE__.onEventDuration('event的category名称','event的action名称')">触发不带map和duration的事件</button><br/>
+</body>
+</html>

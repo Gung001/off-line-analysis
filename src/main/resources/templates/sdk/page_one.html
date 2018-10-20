@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title>第一页</title>
+</head>
+<script type="text/javascript" src="/static/js/track/analytics.js"></script>
+<body>
+    <h3>第一页</h3>
+    <b>跳转到</b>:
+    <a href="/js_sdk/index">导航页</a>
+    <a href="/js_sdk/page_one">第一页</a>
+    <a href="/js_sdk/page_two">第二页</a>
+    <a href="/js_sdk/page_three">第三页</a>
+    <hr/>
+    <label>orderid: 123456</label><br>
+    <label>orderName: 测试订单123456</label><br/>
+    <label>currencyAmount: 524.01</label><br/>
+    <label>currencyType: RMB</label><br/>
+    <label>paymentType: alipay</label><br/>
+    <button onclick="__AE__.onChargeRequest('123456','测试订单123456',524.01,'RMB','alipay')">触发chargeRequest事件</button><br/>
+</body>
+</html>

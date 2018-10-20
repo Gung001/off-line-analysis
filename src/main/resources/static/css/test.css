@@ -1,0 +1,10 @@
+body {
+    font-size: 24px;
+    font-family: 方正细珊瑚简体;
+    color: #abcdef;
+}
+
+#age {
+    border: 1px #abcdef double;
+    color: aqua;
+}
