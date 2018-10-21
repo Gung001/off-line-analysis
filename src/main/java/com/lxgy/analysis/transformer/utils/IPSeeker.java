@@ -57,9 +57,7 @@ public class IPSeeker {
         b4 = new byte[4];
         b3 = new byte[3];
         try {
-//            String ipFilePath = IPSeeker.class.getResource("qqwry.dat").getFile();
             String ipFilePath = this.getClass().getClassLoader().getResource("ip/qqwry.dat").getPath();
-            System.out.println(ipFilePath);
             ipFile = new RandomAccessFile(ipFilePath, "r");
         } catch (FileNotFoundException e) {
             System.out.println("IP地址信息文件没有找到，IP显示功能将无法使用");
